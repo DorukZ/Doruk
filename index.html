@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doruk's Awesome Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Doruk</h1>
+            <nav class="nav">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#features">Features</a>
+                <a href="#contact">Contact</a>
+                <button id="theme-toggle" aria-label="Switch Theme">🌓</button>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome to the greatest website ever</h2>
+            <p>Clean design, responsive layout and a dash of JavaScript magic.</p>
+            <a href="#features" class="btn">See Features</a>
+        </div>
+    </section>
+
+    <section id="about" class="about container">
+        <h2>About This Site</h2>
+        <p>This demo showcases a modern web design with a simple theme switcher.
+           The layout is responsive and looks great on any device.</p>
+    </section>
+
+    <section id="features" class="features container">
+        <h2>Features</h2>
+        <ul>
+            <li>Elegant light/dark themes</li>
+            <li>Responsive layout using flexbox and grid</li>
+            <li>Smooth scrolling navigation</li>
+            <li>Accessible design</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact container">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label>
+                Name
+                <input type="text" id="name" required>
+            </label>
+            <label>
+                Email
+                <input type="email" id="email" required>
+            </label>
+            <label>
+                Message
+                <textarea id="message" required></textarea>
+            </label>
+            <button type="submit" class="btn">Send</button>
+        </form>
+        <p id="form-status" aria-live="polite"></p>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Doruk</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
