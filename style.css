@@ -1,0 +1,100 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #222222;
+    --primary-color: #0077ff;
+    --header-bg: #f8f8f8;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    scroll-behavior: smooth;
+}
+
+body.dark {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --header-bg: #1f1f1f;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.header {
+    background-color: var(--header-bg);
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+.nav a {
+    margin: 0 0.5rem;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.hero {
+    background: linear-gradient(135deg, #00b4db, #0083b0);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.about, .features, .contact {
+    padding: 2rem 0;
+}
+
+.features ul {
+    list-style: disc inside;
+    padding-left: 1rem;
+}
+
+.contact form {
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.footer {
+    background: var(--header-bg);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
